@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homepage | Anushka Foundation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+<style>
+#scrollTopBtn{
+position:fixed;
+bottom:24px;
+right:24px;
+width:52px;
+height:52px;
+border:none;
+border-radius:50%;
+background:#0f172a;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+opacity:0;
+visibility:hidden;
+transform:translateY(20px);
+transition:all .3s ease;
+z-index:9999;
+}
+#scrollTopBtn.show{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+@media(max-width:768px){
+#scrollTopBtn{
+width:46px;
+height:46px;
+font-size:18px;
+bottom:18px;
+right:18px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+  <header class="topbar">
+
+        <div class="brand-row">
+
+            <div class="brand">
+
+    <div class="logo-mark" onclick="openLogoPopup()">
+        <img src="assets/images/logo.png" alt="Logo">
+    </div>
+
+    <div class="brand-name">
+
+        <b>
+            <span class="orange">Anushka</span>
+            <span class="foundation-orange">Foundation</span>
+            <span class="foundation-orange">|</span>
+            <span class="orange">अनुष्का</span>
+            <span class="foundation-orange">फाउंडेशन</span>
+        </b>
+
+        <small>
+            (Registered Under FCRA-1976, CSO Registered Under SRA-1860, PAN, 12A & 80G)<br>
+            Regd. Address: 80B, J.B. Garden, Purvideen Kheda, Para Road, Lucknow, Uttar Pradesh - 226017
+        </small>
+
+    </div>
+
+</div>
+
+            <button class="menu-btn">☰ Menu</button>
+
+            <div class="right-title">
+                <b>Nasha Mukti Kendra | नशा मुक्ति केंद्र</span></b>
+
+                <small>
+                    📞+91-9793973143 | 📭 anushkafoundationlko@gmail.com <br>
+                    📍Near Singh Dhaba, Opposite of New Tehsil, Highway <br>Road, Sandila, Hardoi, Uttar Pradesh - 241204
+                </small>
+            </div>
+
+        </div>
+
+<nav class="nav">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About Us</a>
+
+    <a href="programs.html">Programs & Achievements</a>
+
+    <a href="team.html">Our Teams</a>
+
+    <a href="facilities.html">Facilities</a>
+
+    <a href="gallery.html">Gallery</a>
+
+    <a href="testimonials.html">Testimonials</a>
+
+    <a href="resources.html">Resources</a>
+
+    <a href="contact.html">Contact Us</a>
+
+    <span class="datebox" id="datetime"></span>
+
+</nav>
+
+    </header>
+
+  <section class="hero">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-content">
+
+<h1 id="typing-text"></h1>
+        <h2>
+            व्यसन से मुक्ति पाएँ🔹पूर्ण रूप से स्वस्थ हों🔹उज्ज्वल भविष्य चुनें🔹गर्व के साथ जीवन का पुनर्निर्माण करें
+        </h2>
+
+        <p>
+            Anushka Foundation, Sandila : supports addiction recovery through counselling, rehabilitation, wellness and 
+            family care, helping individuals rebuild confidence, dignity and a healthier future.
+        </br><br>
+            अनुष्का फाउंडेशन, संडीला - काउंसलिंग, पुनर्वास, स्वास्थ्य सेवाओं और पारिवारिक सहयोग के माध्यम से नशा मुक्ति में 
+            सहायता कर बेहतर और सम्मानजनक जीवन प्रदान करता है।
+        </p>
+
+        <div class="hero-btns">
+
+            <a class="btn" href="contact.html">
+                Get Help Now
+            </a>
+
+            <a class="btn dark" href="programs.html">
+                View Programs
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE SLIDESHOW -->
+    <div class="hero-slideshow">
+
+        <img src="assets/images/homeslideshow/homeslideshow-image1.jpg" class="slide active" alt="Image 1">
+
+        <img src="assets/images/homeslideshow/homeslideshow-image2.jpg" class="slide" alt="Image 2">
+
+        <img src="assets/images/homeslideshow/homeslideshow-image3.jpg" class="slide" alt="Image 3">
+
+        <img src="assets/images/homeslideshow/homeslideshow-image4.jpg" class="slide" alt="Image 4">
+
+        <img src="assets/images/homeslideshow/homeslideshow-image5.jpg" class="slide" alt="Image 5">
+
+    </div>
+
+</section>
+    <section class="section">
+
+        <div class="grid grid-4">
+
+            <div class="card feature">
+                <div class="icon">❤</div>
+
+                <h3>Compassionate Care
+                </br> करुणापूर्ण देखभाल
+                </h3>
+
+                <p>
+                    Respectful, non-judgemental support
+                    for every individual and family.
+                </p>
+            </div>
+
+            <div class="card feature">
+                <div class="icon">🏠</div>
+
+                <h3>Safe & Secure
+                   </br> सकुशल सुरक्षित
+                </h3>
+
+                <p>
+                    A peaceful, hygienic and supervised
+                    environment for focused recovery.
+                </p>
+            </div>
+
+            <div class="card feature">
+                <div class="icon">🧭</div>
+
+                <h3>Guided Recovery
+                    </br> निर्देशित पुनर्प्राप्ति
+                </h3>
+
+                <p>
+                    Structured routines, counselling,
+                    wellness and relapse-prevention planning.
+                </p>
+            </div>
+
+            <div class="card feature">
+                <div class="icon">🌱</div>
+
+                <h3>Better Tomorrow
+                     </br> बेहतर कल
+                </h3>
+
+                <p>
+                    Helping people rebuild confidence,
+                    relationships, habits and purpose.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat">
+                <b>24×7</b> Support
+            </div>
+
+            <div class="stat">
+                <b>100%</b> Confidential
+            </div>
+
+            <div class="stat">
+                <b>Holistic</b> Care
+            </div>
+
+            <div class="stat">
+                <b>Family</b> Guidance
+            </div>
+
+        </div>
+
+        <div class="strip">
+            “Quit addiction, save your life – we are with you.”</br>
+            "नशा छोड़ो, जीवन जोड़ो - हम आपके साथ हैं।"
+        </div>
+
+    </section>
+
+    <section class="section white">
+
+        <div class="two-col">
+
+            <div>
+
+                <h2 class="title">
+                    Why Choose
+                    <span class="orange-text">
+                        Anushka Foundation?
+                    </span>
+                </h2>
+
+                <p class="lead">
+                    Addiction affects health, emotions,
+                    relationships, career and social identity.
+                    Our approach is not limited to stopping
+                    substance use; we focus on emotional healing,
+                    routine correction, family support and
+                    practical life improvement.<br><br>
+                    नशा स्वास्थ्य, भावनाओं, रिश्तों, आजीविका और सामाजिक पहचान
+                     को प्रभावित करता है। हमारा दृष्टिकोण केवल नशीले पदार्थों के सेवन को 
+                     रोकने तक सीमित नहीं है; हम भावनात्मक उपचार, दिनचर्या में सुधार, 
+                     पारिवारिक सहयोग और व्यावहारिक जीवन में उन्नति पर ध्यान केंद्रित करते हैं।
+                </p>
+
+<ul class="list">
+
+  <li>
+    Personalized recovery planning according to individual need
+    <br>
+    <small>
+      प्रत्येक व्यक्ति की आवश्यकता के अनुसार व्यक्तिगत रिकवरी योजना
+    </small>
+  </li>
+
+  <li>
+    Counselling for stress, anxiety, guilt, anger and emotional triggers
+    <br>
+    <small>
+      तनाव, चिंता, अपराधबोध, गुस्सा और भावनात्मक समस्याओं के लिए काउंसलिंग
+    </small>
+  </li>
+
+  <li>
+    Yoga, meditation and healthy lifestyle activities
+    <br>
+    <small>
+      योग, ध्यान और स्वस्थ जीवनशैली से जुड़ी गतिविधियाँ
+    </small>
+  </li>
+
+  <li>
+    Family guidance for support and relapse prevention
+    <br>
+    <small>
+      परिवार को सहयोग और दोबारा नशे से बचाव के लिए मार्गदर्शन
+    </small>
+  </li>
+
+  <li>
+    Privacy-focused process with dignity at every step
+    <br>
+    <small>
+      हर चरण में सम्मान और गोपनीयता पर आधारित प्रक्रिया
+    </small>
+  </li>
+
+</ul>
+
+          </div>
+
+<div class="poster">
+
+<!-- CENTER LOGO -->
+<div class="poster-logo">
+
+    <img src="assets/images/logo.png"
+         alt="Anushka Foundation Logo">
+
+</div>
+
+    <h2>
+        ANUSHKA FOUNDATION
+        <br>
+        अनुष्का फाउंडेशन
+    </h2>
+
+    <h3>
+        Nasha Mukti Kendra, Sandila
+        <br>
+        नशा मुक्ति केंद्र, संडीला
+    </h3>
+
+    <div class="badge-row">
+
+        <span class="badge">
+            Treatment | उपचार
+        </span>
+
+        <span class="badge">
+            Wellness | स्वास्थ्य
+        </span>
+
+        <span class="badge">
+            Support | सहयोग
+        </span>
+
+        <span class="badge">
+            New Beginning | नई शुरुआत
+        </span>
+
+    </div>
+
+    <!-- BUTTON AREA -->
+    <div class="poster-buttons">
+
+        <a class="btn download-btn"
+           href="assets/images/home-banner/anushka-banner.jpg"
+           download="Anushka_Foundation_Banner.jpg">
+
+          ⬇️  Download Banner to Share
+
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+    </section>
+
+<!-- LOGO POPUP -->
+
+<div class="logo-popup" id="logoPopup">
+
+    <span class="close-popup" onclick="closeLogoPopup()">
+        ✕
+    </span>
+
+    <img src="assets/images/logo.png" alt="Logo">
+
+</div>
+
+    <footer class="footer">
+
+    <div class="footer-left">
+        <span class="protection-tag">
+            🔒 Basic Protection Enabled
+            © 2026 All Rights Reserved.
+        </span>
+    </div>
+
+    <div class="footer-right">
+
+        <b>Anushka Foundation</b>
+        — Nasha Mukti Kendra, Sandila, Hardoi, Uttar Pradesh, India
+        <br>
+        <b>@Created & Maintained by :</b>
+
+        IT Development by Tushar Srivastava
+        (
+        <a href="https://www.linkedin.com/company/it-development-by-tushar-srivastava-itdts"
+           class="footer-link"
+           target="_blank">
+            itdts
+        </a>
+        )
+
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+
+
+<button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+<script>
+const scrollTopBtn=document.getElementById('scrollTopBtn');
+window.addEventListener('scroll',()=>{
+if(window.scrollY>300){
+scrollTopBtn.classList.add('show');
+}else{
+scrollTopBtn.classList.remove('show');
+}
+});
+scrollTopBtn.addEventListener('click',()=>{
+window.scrollTo({top:0,behavior:'smooth'});
+});
+</script>
+
+</body>
+
+</html>

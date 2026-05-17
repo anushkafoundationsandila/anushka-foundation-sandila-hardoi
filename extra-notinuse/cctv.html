@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CCTV Monitoring | Anushka Foundation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+<style>
+#scrollTopBtn{
+position:fixed;
+bottom:24px;
+right:24px;
+width:52px;
+height:52px;
+border:none;
+border-radius:50%;
+background:#0f172a;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+opacity:0;
+visibility:hidden;
+transform:translateY(20px);
+transition:all .3s ease;
+z-index:9999;
+}
+#scrollTopBtn.show{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+@media(max-width:768px){
+#scrollTopBtn{
+width:46px;
+height:46px;
+font-size:18px;
+bottom:18px;
+right:18px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+
+        <div class="brand-row">
+
+            <a class="brand" href="index.html">
+
+                <div class="logo-mark">✺</div>
+
+                <div class="brand-name">
+                    <b>
+                        <span class="orange">Anushka</span>
+                        <span class="foundation-orange">Foundation</span>
+                        <span class="foundation-orange">|</span>
+                        <span class="orange">अनुष्का</span>
+                        <span class="foundation-orange">फाउंडेशन</span>
+                    </b>
+
+                    <small>
+                        Our Care • Your Recovery • New Beginning |
+                        हमारी देखभाल • आपका स्वास्थ्य लाभ • नई शुरुआत
+                    </small>
+                </div>
+
+            </a>
+
+            <button class="menu-btn">☰ Menu</button>
+
+            <div class="right-title">
+                <b>Nasha Mukti Kendra | नशा मुक्ति केंद्र</span></b>
+
+                <small>
+
+          📞 +91-9793973143 |
+          📭 anushkafoundationlko@gmail.com
+
+          <br>
+
+          📍 Near Singh Dhaba,
+          Opposite of New Tehsil,
+          Highway Road, Sandila, Hardoi
+
+        </small>
+            </div>
+
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Programs & Achievements</a>
+            <a href="team.html">Our Teams</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="cctv.html">CCTV Monitoring</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact Us</a>
+
+            <span class="datebox" id="datetime"></span>
+        </nav>
+
+    </header>
+
+
+  <!-- PAGE HEAD -->
+  <section class="page-head">
+
+    <h1>CCTV MONITORING | सी.सी.टी.वी. निगरानी</h1>
+
+    <p>Home › CCTV Monitoring</p>
+
+  </section>
+
+  <!-- CCTV SECTION -->
+  <section class="section">
+
+    <h2 class="title">
+      Safety, Security & Transparency
+    </h2>
+
+    <p class="lead">
+      Selected common areas are prepared for CCTV monitoring
+      to maintain safety, discipline and transparent management.
+      Private spaces are respected.<br><br>
+      सुरक्षा, अनुशासन और पारदर्शी प्रबंधन बनाए रखने के लिए चयनित सार्वजनिक 
+      क्षेत्रों में सीसीटीवी निगरानी की व्यवस्था की गई है। निजता का सम्मान किया जाता है।
+    </p>
+
+    <div class="grid cam-grid">
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 01 <br>
+          Main Gate
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 02 <br>
+          Reception Area
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 03 <br>
+          Counselling Room
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 04 <br>
+          Dormitory Male
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 05 <br>
+          Dormitory Female
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 06 <br>
+          Dining Hall
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 07 <br>
+          Yoga & Meditation Hall
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 08 <br>
+          Activity Area
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 09 <br>
+          Garden Area
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 10 <br>
+          Parking Area
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 11 <br>
+          Corridor
+        </div>
+      </div>
+
+      <div class="card cam">
+        <div class="photo photo-cctv">
+          CAM 12 <br>
+          Store Room
+        </div>
+      </div>
+
+    </div>
+
+    <div class="strip">
+      "24×7 safety monitoring for a secure and supportive rehabilitation environment." </br>
+      "सुरक्षित और सहायक पुनर्वास वातावरण के लिए 24×7 सुरक्षा निगरानी।"
+    </div>
+
+  </section>
+
+  <!-- BENEFITS SECTION -->
+  <section class="section white">
+
+    <div class="grid grid-4">
+
+      <div class="card feature">
+
+        <div class="icon">🛡</div>
+
+        <h3>Safety Management</h3>
+
+        <p>
+          Common area supervision improves discipline and safety.
+        </p>
+
+      </div>
+
+      <div class="card feature">
+
+        <div class="icon">⚡</div>
+
+        <h3>Quick Response</h3>
+
+        <p>
+          Helps staff respond quickly during emergency situations.
+        </p>
+
+      </div>
+
+      <div class="card feature">
+
+        <div class="icon">✅</div>
+
+        <h3>Accountability</h3>
+
+        <p>
+          Supports transparent centre management.
+        </p>
+
+      </div>
+
+      <div class="card feature">
+
+        <div class="icon">🔒</div>
+
+        <h3>Privacy Respect</h3>
+
+        <p>
+          Monitoring is limited to selected common areas only.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <b>@Anushka Foundation</b>
+    — Nasha Mukti Kendra, Sandila |
+
+    <b>Maintained by :</b>
+
+    Tushar Srivastava
+    (
+    <a href="https://www.linkedin.com/in/tusharrbl" class="footer-link">
+        Contact
+    </a>
+    )
+
+</footer>
+
+  <script src="script.js"></script>
+
+
+<button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+<script>
+const scrollTopBtn=document.getElementById('scrollTopBtn');
+window.addEventListener('scroll',()=>{
+if(window.scrollY>300){
+scrollTopBtn.classList.add('show');
+}else{
+scrollTopBtn.classList.remove('show');
+}
+});
+scrollTopBtn.addEventListener('click',()=>{
+window.scrollTo({top:0,behavior:'smooth'});
+});
+</script>
+
+</body>
+
+</html>
