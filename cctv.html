@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/images/logo.png">
+    <!-- CHARACTER ENCODING -->
+    <meta charset="UTF-8">
+
+    <!-- RESPONSIVE VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PAGE TITLE -->
+    <title>CCTV | Anushka Foundation</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- CCTV PAGE SPECIFIC STYLE -->
+    <style>
+        body { color: #000; }
+
+        .cctv-soon-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cctv-soon-card {
+            position: relative;
+            overflow: hidden;
+            padding: 70px 28px;
+            border-radius: 34px;
+            background:
+                radial-gradient(circle at top left, rgba(255, 122, 0, 0.20), transparent 35%),
+                linear-gradient(135deg, #fff7ed, #ffffff 45%, #fff3e0);
+            border: 2px solid rgba(255, 122, 0, 0.28);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+        }
+
+        .cctv-soon-card::before,
+        .cctv-soon-card::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgba(255, 122, 0, 0.10);
+            z-index: 0;
+        }
+
+        .cctv-soon-card::before {
+            top: -80px;
+            right: -70px;
+        }
+
+        .cctv-soon-card::after {
+            bottom: -90px;
+            left: -70px;
+        }
+
+        .cctv-soon-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cctv-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 28px;
+            background: linear-gradient(135deg, #ff7a00, #ffb347);
+            color: #fff;
+            font-size: 48px;
+            box-shadow: 0 15px 35px rgba(255, 122, 0, 0.35);
+        }
+
+        .cctv-live-soon {
+            margin: 0;
+            font-size: clamp(42px, 7vw, 86px);
+            line-height: 1.05;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #e85d04;
+            text-transform: uppercase;
+            text-shadow: 0 8px 18px rgba(232, 93, 4, 0.18);
+        }
+
+        .cctv-subtitle {
+            margin: 22px auto 0;
+            max-width: 780px;
+            font-size: clamp(18px, 2.2vw, 26px);
+            line-height: 1.6;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .cctv-note-box {
+            margin-top: 34px;
+            padding: 22px;
+            border-radius: 22px;
+            background: #ffffff;
+            border: 1px solid rgba(255, 122, 0, 0.25);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .cctv-status-grid {
+            margin-top: 34px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .cctv-status-box {
+            padding: 24px 18px;
+            border-radius: 22px;
+            background: #fff;
+            border: 1px solid rgba(255, 122, 0, 0.22);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .cctv-status-box .icon {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .cctv-status-box h3 {
+            margin: 0 0 8px;
+            color: #e85d04;
+            font-size: 20px;
+        }
+
+        .cctv-status-box p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .cctv-soon-card { padding: 46px 18px; border-radius: 24px; }
+            .cctv-icon { width: 78px; height: 78px; font-size: 38px; border-radius: 22px; }
+            .cctv-status-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
+
+<style>
+#scrollTopBtn{
+position:fixed;
+bottom:24px;
+right:24px;
+width:52px;
+height:52px;
+border:none;
+border-radius:50%;
+background:#0f172a;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+opacity:0;
+visibility:hidden;
+transform:translateY(20px);
+transition:all .3s ease;
+z-index:9999;
+}
+#scrollTopBtn.show{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+@media(max-width:768px){
+#scrollTopBtn{
+width:46px;
+height:46px;
+font-size:18px;
+bottom:18px;
+right:18px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- HEADER SECTION - SAME AS CONTACT PAGE -->
+    <!-- ===================================================== -->
+
+<header class="topbar">
+
+        <div class="brand-row">
+
+            <!-- LOGO + WEBSITE NAME -->
+            <a class="brand" href="index.html">
+
+                <div class="logo-mark">
+
+                    <img src="assets/images/logo.png" alt="Logo">
+
+                </div>
+
+                <div class="brand-name">
+
+                    <b>
+
+                        <span class="orange">Anushka</span>
+
+                        <span class="foundation-orange">Foundation</span>
+
+                        <span class="foundation-orange">|</span>
+
+                        <span class="orange">अनुष्का</span>
+
+                        <span class="foundation-orange">फाउंडेशन</span>
+
+                    </b>
+
+                    <small>
+           Registered under the Societies Registration Act, 1860<br>
+           Certified under Sections 12A & 80G of the Income Tax Act<br>
+           Registered Office: 80B, J.B. Garden, Purvideen Kheda, Para Road, Lucknow, Uttar Pradesh – 226017
+        </small>
+
+                </div>
+
+            </a>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button class="menu-btn">
+                ☰ Menu
+            </button>
+
+            <!-- RIGHT SIDE NGO INFO -->
+            <div class="right-title">
+
+                <b>
+                    Nasha Mukti Kendra | नशा मुक्ति केंद्र
+                </b>
+
+                <small>
+                    📞+91-9793973143 | 📭 anushkafoundationlko@gmail.com <br>
+                    📍Near Singh Dhaba, Opposite of New Tehsil, Highway <br>Road, Sandila, Hardoi, Uttar Pradesh - 241204
+                </small>
+
+            </div>
+
+        </div>
+
+        <!-- NAVIGATION MENU -->
+        <nav class="nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="programs.html">Programs & Achievements</a>
+
+            <a href="team.html">Our Teams</a>
+
+            <a href="facilities.html">Facilities</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="testimonials.html">Testimonials</a>
+
+            <a href="resources.html">Resources</a>
+
+            <a href="cctv.html">CCTV</a>
+
+            <a href="contact.html">Contact Us</a>
+
+            <!-- DATE & TIME BOX -->
+            <span class="datebox" id="datetime"></span>
+
+        </nav>
+
+    </header>
+
+    <!-- ===================================================== -->
+    <!-- PAGE HEADER -->
+    <!-- ===================================================== -->
+
+    <section class="page-head">
+        <h1>CCTV | सी.सी.टी.वी.</h1>
+        <p>Home › CCTV</p>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CCTV COMING SOON SECTION -->
+    <!-- ===================================================== -->
+
+    <section class="section">
+        <div class="cctv-soon-wrapper">
+            <div class="cctv-soon-card">
+                <div class="cctv-soon-content">
+                    <div class="cctv-icon">📹</div>
+
+                    <h2 class="cctv-live-soon">CCTV is live on <br> e-anudhaan.</h2>
+
+                    <p class="cctv-subtitle">
+                        Acess is only for authorized personnel and ministry officials for safety, security and transparency purposes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cctv-status-grid">
+                <div class="cctv-status-box">
+                    <div class="icon">🛡️</div>
+                    <h3>Safety First</h3>
+                    <p>Common area monitoring will support safety and discipline.</p>
+                </div>
+
+                <div class="cctv-status-box">
+                    <div class="icon">🔒</div>
+                    <h3>Privacy Protected</h3>
+                    <p>Monitoring will be limited to permitted common areas only.</p>
+                </div>
+
+                <div class="cctv-status-box">
+                    <div class="icon">⚙️</div>
+                    <h3>Setup in Progress</h3>
+                    <p>Technical configuration and testing are currently underway.</p>
+                </div>
+            </div>
+
+            <div class="strip" style="color:#000; margin-top:35px;">
+                For any CCTV related query, please contact us through the Contact Us page.
+                <br>
+                सी.सी.टी.वी. से जुड़ी जानकारी के लिए कृपया Contact Us पेज से संपर्क करें।
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- FOOTER SECTION - SAME AS CONTACT PAGE -->
+    <!-- ===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-left">
+       <b> Community Welfare & Social Support:</b><br>
+🔹Social Welfare Organization<br>
+🔹Community Development Initiative<br>
+🔹Social Justice & Rehabilitation Support<br>
+🔹Empowering Society Through Care
+        
+    </div>
+
+    <div class="footer-right">
+<span class="protection-tag">
+            🔒 Basic Protection Enabled
+            © 2026 All Rights Reserved.
+        </span><br><br>
+        <b>Anushka Foundation</b>
+        — Nasha Mukti Kendra, Sandila, Hardoi, Uttar Pradesh, India
+        <br>
+        <b>@Created & Maintained by :</b>
+
+        IT Development by Tushar Srivastava
+        (
+        <a href="https://www.linkedin.com/company/it-development-by-tushar-srivastava-itdts"
+           class="footer-link"
+           target="_blank">
+            itdts
+        </a>
+        )
+
+    </div>
+
+</footer>
+
+    <!-- MAIN JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+<button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+<script>
+const scrollTopBtn=document.getElementById('scrollTopBtn');
+window.addEventListener('scroll',()=>{
+if(window.scrollY>300){
+scrollTopBtn.classList.add('show');
+}else{
+scrollTopBtn.classList.remove('show');
+}
+});
+scrollTopBtn.addEventListener('click',()=>{
+window.scrollTo({top:0,behavior:'smooth'});
+});
+</script>
+
+</body>
+
+</html>
